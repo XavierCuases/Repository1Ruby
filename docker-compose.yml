@@ -1,0 +1,10 @@
+version: '3'
+services:
+  ruby:
+    build: .
+    ports:
+      - "4567:4567"  
+    volumes:
+      - ".:/usr/src/app"  
+    environment:
+      - RACK_ENV=development
